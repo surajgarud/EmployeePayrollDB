@@ -13,3 +13,13 @@ name varchar(50) not null unique,
 salary money not null,
 start date not null
 )
+
+
+	UC3 & UC4
+
+select * from employee_payroll1
+
+insert into employee_payroll1 values
+('ramesh',16345.90,'2019-02-07'),
+('gauri',14312.56,'2022-02-16'),
+('rakesh',9000.0,'2021-11-28')
