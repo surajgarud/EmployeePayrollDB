@@ -19,10 +19,10 @@ start date not null
 
 select * from employee_payroll1
 
-insert into employee_payroll1 values
-('ramesh',16345.90,'2019-02-07'),
+insert into employee_payroll1 (name,salary,start) values
+('Rani',16345.90,'2019-02-07')
 ('gauri',14312.56,'2022-02-16'),
-('rakesh',9000.0,'2021-11-28')
+('vikash',9000.0,'2021-11-28')
 
 		UC5
 
@@ -31,3 +31,11 @@ select salary from employee_payroll1 where name='ramesh'
 select * from employee_payroll1 where start between '2018-01-01' and '2022-01-01'
 
 select cast(getdate() as varchar(20))
+
+
+		UC6
+
+alter table employee_payroll1 add
+Gender varchar(6)
+update employee_payroll1 set gender='Male' where id in (1,3)
+update employee_payroll1 set gender='FeMale' where id in (2,5)
