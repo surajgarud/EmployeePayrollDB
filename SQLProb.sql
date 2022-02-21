@@ -56,3 +56,14 @@ phone varchar(15),address varchar(60),department varchar(30) not null default 'o
 
 alter table employee_payroll1 add
 constraint DF_Address default 'India' for address
+
+
+		UC9
+
+alter table employee_payroll1 add
+Basic_Pay money,
+Deduction money,
+TaxablePAy money,
+Tax money
+
+sp_rename 'employee_payroll1.salary','Net_Pay'
