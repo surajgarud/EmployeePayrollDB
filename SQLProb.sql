@@ -48,3 +48,11 @@ select avg(salary) from employee_payroll1
 select min(salary) from employee_payroll1
 select max(salary) from employee_payroll1
 select gender,sum(salary)as'Sum Salary',avg(salary) as 'Avg Salary'from employee_payroll1 group by gender
+
+
+		UC8
+alter table employee_payroll1 add
+phone varchar(15),address varchar(60),department varchar(30) not null default 'others'
+
+alter table employee_payroll1 add
+constraint DF_Address default 'India' for address
