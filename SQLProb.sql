@@ -39,3 +39,12 @@ alter table employee_payroll1 add
 Gender varchar(6)
 update employee_payroll1 set gender='Male' where id in (1,3)
 update employee_payroll1 set gender='FeMale' where id in (2,5)
+
+		UC7
+
+
+select sum(salary) from employee_payroll1
+select avg(salary) from employee_payroll1
+select min(salary) from employee_payroll1
+select max(salary) from employee_payroll1
+select gender,sum(salary)as'Sum Salary',avg(salary) as 'Avg Salary'from employee_payroll1 group by gender
